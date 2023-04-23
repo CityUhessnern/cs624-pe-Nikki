@@ -1,5 +1,5 @@
 import React from 'react';
-import {View, TextInput, StyleSheet} from 'react-native';
+import { View, TextInput, StyleSheet } from 'react-native';
 
 const Input = ({inputValue, inputChange}) => (
     <View style={styles.inputContainer}>
@@ -12,7 +12,7 @@ const Input = ({inputValue, inputChange}) => (
             onChangeText={inputChange}
         />
     </View>
-);
+)
 
 const styles = StyleSheet.create({
     inputContainer: {
@@ -28,7 +28,7 @@ const styles = StyleSheet.create({
         backgroundColor: '#ffffff',
         paddingLeft: 10,
         paddingRight: 10,
-    },
-});
+    }
+})
 
 export default Input;
