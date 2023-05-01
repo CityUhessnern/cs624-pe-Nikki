@@ -30,7 +30,7 @@ const styles = StyleSheet.create({
     },
     complete: {
         color: 'green',
-        fondWeight: 'bold'
+        fontWeight: 'bold'
     },
     deleteButton: {
         color: 'rgba(175, 47, 47, 1)'
