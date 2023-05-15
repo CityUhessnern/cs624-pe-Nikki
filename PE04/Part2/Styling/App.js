@@ -102,7 +102,16 @@ export default class App extends Component {
 
     return (
       <View style={styles.container}>
-        {list} 
+        <View style={[styles.flexContainer]}>
+          {list}
+          {list}
+          {list}
+        </View>
+        <View style={[styles.flexContainer]}>
+          {list}
+          {list}
+          {list}
+        </View>
       </View>
     );
   }
@@ -113,21 +122,29 @@ const profileCardColor = 'dodgerblue';
 const styles = StyleSheet.create({
     container: {
         flex: 1,
+        flexDirection: 'row',
         justifyContent: 'center',
-        alignItems: 'center'
+        alignItems: 'center',
     },
     /*
       Adds a drop shadow to the card container based on the platform
     */
+   flexContainer: {
+        flex: 1,
+        flexDirection: 'column',
+        justifyContent: 'space-around',
+        alignItems: 'center'
+        
+   },
     cardContainer: {
+        justifyContent: 'center',
         alignItems: 'center',
         borderColor: 'black',
         borderWidth: 3,
         borderStyle: 'solid',
         borderRadius: 20,
         backgroundColor: profileCardColor,
-        width: 300,
-        height: 400,
+        aspectRatio: .75,
         ...Platform.select({ 
           ios: {
             shadowColor: 'black',
