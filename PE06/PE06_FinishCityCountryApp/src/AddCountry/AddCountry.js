@@ -1,5 +1,5 @@
-// Listing 6.5 AddCity tab
-// Listing 6.6 AddCity tab
+// Listing 6.5 AddCountry tab
+// Listing 6.6 AddCountry tab
 import React from 'react'
 import { View, Text, StyleSheet, TextInput, TouchableOpacity } from 'react-native'
 import uuidV4 from 'uuid/v4'
@@ -19,7 +19,7 @@ class AddCountry extends React.Component {
       country: this.state.country,
       currency: this.state.currency,
       id: uuidV4(),
-      locations: []
+      currencies: []
     }
     this.props.route.params.addCountry(country)
     this.setState({

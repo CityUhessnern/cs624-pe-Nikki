@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "CitiesApp",
-    "slug": "CitiesApp",
+    "name": "PE06_FinishCityCountryApp",
+    "slug": "PE06_FinishCityCountryApp",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",

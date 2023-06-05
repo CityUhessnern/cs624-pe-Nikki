@@ -1,5 +1,5 @@
-// Listing 6.7 Cities route (functionality)
-// Listing 6.8 Cities route (styling)
+// Listing 6.7 countries route (functionality)
+// Listing 6.8 countries route (styling)
 import React from 'react'
 import { View, Text, StyleSheet, TouchableWithoutFeedback, ScrollView } from 'react-native'
 import CenterMessage from '../components/CenterMessage'
@@ -7,7 +7,7 @@ import { colors } from '../theme'
 
 export default class Countries extends React.Component {
   static navigationOptions = {
-    title: 'Countries',
+    title: 'CountriesNav',
     headerTitleStyle: {
       color: 'white',
       fontSize: 20,
